@@ -1,0 +1,125 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+main {
+  height: 88vh;
+  background-color: #F7F7F7;
+}
+
+header {
+  background: #EBF400;
+  height: 6vh;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  color: #F72798;
+}
+
+footer {
+  background: #F72798;
+  height: 6vh;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 2rem 0;
+  text-align: center;;
+}
+
+.score {
+  padding: 3rem 0;
+}
+
+.score h2 {
+  font-size: 3rem;
+  color: #F57D1F;
+}
+
+.img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.play {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.play button {
+    width:20%;
+    background-color: #F72798;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1rem;
+    transition: 0.3s;
+}
+
+.play button:hover {
+  background-color: #EBF400;
+}
+
+.result {
+  padding-top: 5rem;
+}
+
+.result h3 {
+  padding: 0.5rem 0;
+  font-size: 3rem;
+}
+
+.reset {
+  padding-top: 5rem;
+}
+
+.reset button {
+    width:50%;
+    height: 3rem;
+    background-color: #000000;
+    color: #EBF400;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1rem;
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .img {
+    grid-template-columns: 1fr;
+  }
+
+  .play button {
+    font-size: 0.9rem;
+    padding: 12px 15px;
+  }
+
+  .score h2 {
+    font-size: 2.5rem;
+  }
+}
